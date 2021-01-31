@@ -1,0 +1,683 @@
+@startuml
+
+title __SIXTHEXAMPLE's Class Diagram__\n
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo {
+          {static} - descriptor : FileDescriptor
+          {static} - internal_static_com_twdt_protobuf_Cat_descriptor : Descriptor
+          {static} - internal_static_com_twdt_protobuf_Cat_fieldAccessorTable : FieldAccessorTable
+          {static} - internal_static_com_twdt_protobuf_Dog_descriptor : Descriptor
+          {static} - internal_static_com_twdt_protobuf_Dog_fieldAccessorTable : FieldAccessorTable
+          {static} - internal_static_com_twdt_protobuf_MyMessage_descriptor : Descriptor
+          {static} - internal_static_com_twdt_protobuf_MyMessage_fieldAccessorTable : FieldAccessorTable
+          {static} - internal_static_com_twdt_protobuf_Person_descriptor : Descriptor
+          {static} - internal_static_com_twdt_protobuf_Person_fieldAccessorTable : FieldAccessorTable
+          {static} + getDescriptor()
+          {static} + registerAllExtensions()
+          {static} + registerAllExtensions()
+          - MyDataInfo()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Cat {
+          {static} + CITY_FIELD_NUMBER : int
+          {static} + NAME_FIELD_NUMBER : int
+          {static} + PARSER : Parser<Cat>
+          {static} - DEFAULT_INSTANCE : Cat
+          - bitField0_ : int
+          - city_ : Object
+          - memoizedIsInitialized : byte
+          - name_ : Object
+          {static} - serialVersionUID : long
+          + equals()
+          + getCity()
+          + getCityBytes()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getName()
+          + getNameBytes()
+          + getParserForType()
+          + getSerializedSize()
+          + getUnknownFields()
+          + hasCity()
+          + hasName()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - Cat()
+          - Cat()
+          - Cat()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Cat.Builder {
+          - bitField0_ : int
+          - city_ : Object
+          - name_ : Object
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearCity()
+          + clearField()
+          + clearName()
+          + clearOneof()
+          + clone()
+          + getCity()
+          + getCityBytes()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getName()
+          + getNameBytes()
+          + hasCity()
+          + hasName()
+          + isInitialized()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeUnknownFields()
+          + setCity()
+          + setCityBytes()
+          + setField()
+          + setName()
+          + setNameBytes()
+          + setRepeatedField()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      interface com.twdt.netty.sixthexample.MyDataInfo.CatOrBuilder {
+          {abstract} + getCity()
+          {abstract} + getCityBytes()
+          {abstract} + getName()
+          {abstract} + getNameBytes()
+          {abstract} + hasCity()
+          {abstract} + hasName()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Dog {
+          {static} + AGE_FIELD_NUMBER : int
+          {static} + NAME_FIELD_NUMBER : int
+          {static} + PARSER : Parser<Dog>
+          {static} - DEFAULT_INSTANCE : Dog
+          - age_ : int
+          - bitField0_ : int
+          - memoizedIsInitialized : byte
+          - name_ : Object
+          {static} - serialVersionUID : long
+          + equals()
+          + getAge()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getName()
+          + getNameBytes()
+          + getParserForType()
+          + getSerializedSize()
+          + getUnknownFields()
+          + hasAge()
+          + hasName()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - Dog()
+          - Dog()
+          - Dog()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Dog.Builder {
+          - age_ : int
+          - bitField0_ : int
+          - name_ : Object
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearAge()
+          + clearField()
+          + clearName()
+          + clearOneof()
+          + clone()
+          + getAge()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getName()
+          + getNameBytes()
+          + hasAge()
+          + hasName()
+          + isInitialized()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeUnknownFields()
+          + setAge()
+          + setField()
+          + setName()
+          + setNameBytes()
+          + setRepeatedField()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      interface com.twdt.netty.sixthexample.MyDataInfo.DogOrBuilder {
+          {abstract} + getAge()
+          {abstract} + getName()
+          {abstract} + getNameBytes()
+          {abstract} + hasAge()
+          {abstract} + hasName()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.MyMessage {
+          {static} + CAT_FIELD_NUMBER : int
+          {static} + DATA_TYPE_FIELD_NUMBER : int
+          {static} + DOG_FIELD_NUMBER : int
+          {static} + PARSER : Parser<MyMessage>
+          {static} + PERSON_FIELD_NUMBER : int
+          {static} - DEFAULT_INSTANCE : MyMessage
+          - bitField0_ : int
+          - dataBodyCase_ : int
+          - dataBody_ : Object
+          - dataType_ : int
+          - memoizedIsInitialized : byte
+          {static} - serialVersionUID : long
+          + equals()
+          + getCat()
+          + getCatOrBuilder()
+          + getDataBodyCase()
+          + getDataType()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDog()
+          + getDogOrBuilder()
+          + getParserForType()
+          + getPerson()
+          + getPersonOrBuilder()
+          + getSerializedSize()
+          + getUnknownFields()
+          + hasCat()
+          + hasDataType()
+          + hasDog()
+          + hasPerson()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - MyMessage()
+          - MyMessage()
+          - MyMessage()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.MyMessage.Builder {
+          - bitField0_ : int
+          - catBuilder_ : SingleFieldBuilderV3<Cat, Builder, CatOrBuilder>
+          - dataBodyCase_ : int
+          - dataBody_ : Object
+          - dataType_ : int
+          - dogBuilder_ : SingleFieldBuilderV3<Dog, Builder, DogOrBuilder>
+          - personBuilder_ : SingleFieldBuilderV3<Person, Builder, PersonOrBuilder>
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearCat()
+          + clearDataBody()
+          + clearDataType()
+          + clearDog()
+          + clearField()
+          + clearOneof()
+          + clearPerson()
+          + clone()
+          + getCat()
+          + getCatBuilder()
+          + getCatOrBuilder()
+          + getDataBodyCase()
+          + getDataType()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getDog()
+          + getDogBuilder()
+          + getDogOrBuilder()
+          + getPerson()
+          + getPersonBuilder()
+          + getPersonOrBuilder()
+          + hasCat()
+          + hasDataType()
+          + hasDog()
+          + hasPerson()
+          + isInitialized()
+          + mergeCat()
+          + mergeDog()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergePerson()
+          + mergeUnknownFields()
+          + setCat()
+          + setCat()
+          + setDataType()
+          + setDog()
+          + setDog()
+          + setField()
+          + setPerson()
+          + setPerson()
+          + setRepeatedField()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - getCatFieldBuilder()
+          - getDogFieldBuilder()
+          - getPersonFieldBuilder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      enum DataBodyCase {
+        CAT
+        DATABODY_NOT_SET
+        DOG
+        PERSON
+        value
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      enum DataType {
+        CatType
+        CatType_VALUE
+        DogType
+        DogType_VALUE
+        PersonType
+        PersonType_VALUE
+        VALUES
+        internalValueMap
+        value
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      interface com.twdt.netty.sixthexample.MyDataInfo.MyMessageOrBuilder {
+          {abstract} + getCat()
+          {abstract} + getCatOrBuilder()
+          {abstract} + getDataBodyCase()
+          {abstract} + getDataType()
+          {abstract} + getDog()
+          {abstract} + getDogOrBuilder()
+          {abstract} + getPerson()
+          {abstract} + getPersonOrBuilder()
+          {abstract} + hasCat()
+          {abstract} + hasDataType()
+          {abstract} + hasDog()
+          {abstract} + hasPerson()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Person {
+          {static} + ADDRESS_FIELD_NUMBER : int
+          {static} + AGE_FIELD_NUMBER : int
+          {static} + NAME_FIELD_NUMBER : int
+          {static} + PARSER : Parser<Person>
+          {static} - DEFAULT_INSTANCE : Person
+          - address_ : Object
+          - age_ : int
+          - bitField0_ : int
+          - memoizedIsInitialized : byte
+          - name_ : Object
+          {static} - serialVersionUID : long
+          + equals()
+          + getAddress()
+          + getAddressBytes()
+          + getAge()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getName()
+          + getNameBytes()
+          + getParserForType()
+          + getSerializedSize()
+          + getUnknownFields()
+          + hasAddress()
+          + hasAge()
+          + hasName()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - Person()
+          - Person()
+          - Person()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.MyDataInfo.Person.Builder {
+          - address_ : Object
+          - age_ : int
+          - bitField0_ : int
+          - name_ : Object
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearAddress()
+          + clearAge()
+          + clearField()
+          + clearName()
+          + clearOneof()
+          + clone()
+          + getAddress()
+          + getAddressBytes()
+          + getAge()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getName()
+          + getNameBytes()
+          + hasAddress()
+          + hasAge()
+          + hasName()
+          + isInitialized()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeUnknownFields()
+          + setAddress()
+          + setAddressBytes()
+          + setAge()
+          + setField()
+          + setName()
+          + setNameBytes()
+          + setRepeatedField()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      interface com.twdt.netty.sixthexample.MyDataInfo.PersonOrBuilder {
+          {abstract} + getAddress()
+          {abstract} + getAddressBytes()
+          {abstract} + getAge()
+          {abstract} + getName()
+          {abstract} + getNameBytes()
+          {abstract} + hasAddress()
+          {abstract} + hasAge()
+          {abstract} + hasName()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbClient {
+          {static} + main()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbClientHandler {
+          + channelActive()
+          # channelRead0()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbClientInitializer {
+          # initChannel()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      abstract class com.twdt.netty.sixthexample.PbParseFromUtil {
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbSecondProtobufCodec {
+          # decode()
+          # encode()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbServer {
+          {static} + main()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbServerHandler {
+          # channelRead0()
+      }
+    }
+  }
+  
+
+  namespace com.twdt.netty {
+    namespace sixthexample {
+      class com.twdt.netty.sixthexample.PbServerInitializer {
+          # initChannel()
+      }
+    }
+  }
+  
+
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.Cat
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.CatOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.Dog
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.DogOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.MyMessage
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.MyMessageOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.Person
+  com.twdt.netty.sixthexample.MyDataInfo +-down- com.twdt.netty.sixthexample.MyDataInfo.PersonOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Cat .up.|> com.twdt.netty.sixthexample.MyDataInfo.CatOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Cat -up-|> com.google.protobuf.GeneratedMessageV3
+  com.twdt.netty.sixthexample.MyDataInfo.Cat +-down- com.twdt.netty.sixthexample.MyDataInfo.Cat.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.Cat.Builder .up.|> com.twdt.netty.sixthexample.MyDataInfo.CatOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Cat.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.Dog .up.|> com.twdt.netty.sixthexample.MyDataInfo.DogOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Dog -up-|> com.google.protobuf.GeneratedMessageV3
+  com.twdt.netty.sixthexample.MyDataInfo.Dog +-down- com.twdt.netty.sixthexample.MyDataInfo.Dog.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.Dog.Builder .up.|> com.twdt.netty.sixthexample.MyDataInfo.DogOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Dog.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage .up.|> com.twdt.netty.sixthexample.MyDataInfo.MyMessageOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage -up-|> com.google.protobuf.GeneratedMessageV3
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage +-down- com.twdt.netty.sixthexample.MyDataInfo.MyMessage.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage +-down- com.twdt.netty.sixthexample.MyDataInfo.MyMessage.DataBodyCase
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage +-down- com.twdt.netty.sixthexample.MyDataInfo.MyMessage.DataType
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage.Builder .up.|> com.twdt.netty.sixthexample.MyDataInfo.MyMessageOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage.DataBodyCase .up.|> com.google.protobuf.AbstractMessageLite.InternalOneOfEnum
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage.DataBodyCase .up.|> com.google.protobuf.Internal.EnumLite
+  com.twdt.netty.sixthexample.MyDataInfo.MyMessage.DataType .up.|> com.google.protobuf.ProtocolMessageEnum
+  com.twdt.netty.sixthexample.MyDataInfo.Person .up.|> com.twdt.netty.sixthexample.MyDataInfo.PersonOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Person -up-|> com.google.protobuf.GeneratedMessageV3
+  com.twdt.netty.sixthexample.MyDataInfo.Person +-down- com.twdt.netty.sixthexample.MyDataInfo.Person.Builder
+  com.twdt.netty.sixthexample.MyDataInfo.Person.Builder .up.|> com.twdt.netty.sixthexample.MyDataInfo.PersonOrBuilder
+  com.twdt.netty.sixthexample.MyDataInfo.Person.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.twdt.netty.sixthexample.PbClientHandler -up-|> io.netty.channel.SimpleChannelInboundHandler
+  com.twdt.netty.sixthexample.PbClientInitializer -up-|> io.netty.channel.ChannelInitializer
+  com.twdt.netty.sixthexample.PbSecondProtobufCodec -up-|> io.netty.handler.codec.MessageToMessageCodec
+  com.twdt.netty.sixthexample.PbServerHandler -up-|> io.netty.channel.SimpleChannelInboundHandler
+  com.twdt.netty.sixthexample.PbServerInitializer -up-|> io.netty.channel.ChannelInitializer
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

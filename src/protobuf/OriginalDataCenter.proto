@@ -1,0 +1,36 @@
+syntax = "proto3";
+package package.parse.hx;
+
+option java_package = "com.kafka.packagedata.proto.devicestat";
+option java_outer_classname = "devicestat";
+option java_multiple_files = true;
+
+message  OriginalAfcDeviceState {
+  repeated DeviceAfcEvent device_event_list = 1;
+
+
+}
+/*
+{
+“device_event_list”:[
+{
+“src_node”:”16131503” ,   //src_node中前四位车站编码为BCD，后四位为HEX
+“event_time”:” 20200720120000” ,  //格式为“YYYYMMDDHH24mmss”
+“state0”:”10”,     //HEX
+“state1”:”11” ,     //HEX
+“relate_node_id”:”00000000” ,   // relate_node_id中前四位车站编码为BCD，后四位为HEX
+ “action”:”00” ,     //HEX
+“event_code”:”0A00” ,     //HEX
+},
+{}
+]
+}*/
+message DeviceAfcEvent{
+  string src_node = 1;
+  string  event_time = 2;
+  string  state0 = 3;
+  string  state1 = 4;
+  string  relate_node_id =5;
+  string  action = 6;
+  string  event_code = 7;
+}
