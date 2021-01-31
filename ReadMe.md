@@ -1,1 +1,1 @@
-netty-lecture
+netty-lecture v1.1.0
