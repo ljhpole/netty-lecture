@@ -1,0 +1,217 @@
+@startuml
+
+title __PROTO's Class Diagram__\n
+
+  namespace com.hx.proto {
+    class com.hx.proto.MyRequest {
+        {static} + USERNAME_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : MyRequest
+        {static} - PARSER : Parser<MyRequest>
+        - memoizedIsInitialized : byte
+        {static} - serialVersionUID : long
+        - username_ : Object
+        + equals()
+        {static} + getDefaultInstance()
+        + getDefaultInstanceForType()
+        {static} + getDescriptor()
+        + getParserForType()
+        + getSerializedSize()
+        + getUnknownFields()
+        + getUsername()
+        + getUsernameBytes()
+        + hashCode()
+        + isInitialized()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        + newBuilderForType()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        + toBuilder()
+        + writeTo()
+        # internalGetFieldAccessorTable()
+        # newBuilderForType()
+        # newInstance()
+        - MyRequest()
+        - MyRequest()
+        - MyRequest()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    class com.hx.proto.MyRequest.Builder {
+        - username_ : Object
+        + addRepeatedField()
+        + build()
+        + buildPartial()
+        + clear()
+        + clearField()
+        + clearOneof()
+        + clearUsername()
+        + clone()
+        + getDefaultInstanceForType()
+        {static} + getDescriptor()
+        + getDescriptorForType()
+        + getUsername()
+        + getUsernameBytes()
+        + isInitialized()
+        + mergeFrom()
+        + mergeFrom()
+        + mergeFrom()
+        + mergeUnknownFields()
+        + setField()
+        + setRepeatedField()
+        + setUnknownFields()
+        + setUsername()
+        + setUsernameBytes()
+        # internalGetFieldAccessorTable()
+        - Builder()
+        - Builder()
+        - maybeForceBuilderInitialization()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    interface com.hx.proto.MyRequestOrBuilder {
+        {abstract} + getUsername()
+        {abstract} + getUsernameBytes()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    class com.hx.proto.MyResponse {
+        {static} + REALNAME_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : MyResponse
+        {static} - PARSER : Parser<MyResponse>
+        - memoizedIsInitialized : byte
+        - realname_ : Object
+        {static} - serialVersionUID : long
+        + equals()
+        {static} + getDefaultInstance()
+        + getDefaultInstanceForType()
+        {static} + getDescriptor()
+        + getParserForType()
+        + getRealname()
+        + getRealnameBytes()
+        + getSerializedSize()
+        + getUnknownFields()
+        + hashCode()
+        + isInitialized()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        + newBuilderForType()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        + toBuilder()
+        + writeTo()
+        # internalGetFieldAccessorTable()
+        # newBuilderForType()
+        # newInstance()
+        - MyResponse()
+        - MyResponse()
+        - MyResponse()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    class com.hx.proto.MyResponse.Builder {
+        - realname_ : Object
+        + addRepeatedField()
+        + build()
+        + buildPartial()
+        + clear()
+        + clearField()
+        + clearOneof()
+        + clearRealname()
+        + clone()
+        + getDefaultInstanceForType()
+        {static} + getDescriptor()
+        + getDescriptorForType()
+        + getRealname()
+        + getRealnameBytes()
+        + isInitialized()
+        + mergeFrom()
+        + mergeFrom()
+        + mergeFrom()
+        + mergeUnknownFields()
+        + setField()
+        + setRealname()
+        + setRealnameBytes()
+        + setRepeatedField()
+        + setUnknownFields()
+        # internalGetFieldAccessorTable()
+        - Builder()
+        - Builder()
+        - maybeForceBuilderInitialization()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    interface com.hx.proto.MyResponseOrBuilder {
+        {abstract} + getRealname()
+        {abstract} + getRealnameBytes()
+    }
+  }
+  
+
+  namespace com.hx.proto {
+    class com.hx.proto.StudentProto {
+        {static} ~ internal_static_com_hx_proto_MyRequest_descriptor : Descriptor
+        {static} ~ internal_static_com_hx_proto_MyRequest_fieldAccessorTable : FieldAccessorTable
+        {static} ~ internal_static_com_hx_proto_MyResponse_descriptor : Descriptor
+        {static} ~ internal_static_com_hx_proto_MyResponse_fieldAccessorTable : FieldAccessorTable
+        {static} - descriptor : FileDescriptor
+        {static} + getDescriptor()
+        {static} + registerAllExtensions()
+        {static} + registerAllExtensions()
+        - StudentProto()
+    }
+  }
+  
+
+  com.hx.proto.MyRequest .up.|> com.hx.proto.MyRequestOrBuilder
+  com.hx.proto.MyRequest -up-|> com.google.protobuf.GeneratedMessageV3
+  com.hx.proto.MyRequest +-down- com.hx.proto.MyRequest.Builder
+  com.hx.proto.MyRequest.Builder .up.|> com.hx.proto.MyRequestOrBuilder
+  com.hx.proto.MyRequest.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.hx.proto.MyResponse .up.|> com.hx.proto.MyResponseOrBuilder
+  com.hx.proto.MyResponse -up-|> com.google.protobuf.GeneratedMessageV3
+  com.hx.proto.MyResponse +-down- com.hx.proto.MyResponse.Builder
+  com.hx.proto.MyResponse.Builder .up.|> com.hx.proto.MyResponseOrBuilder
+  com.hx.proto.MyResponse.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

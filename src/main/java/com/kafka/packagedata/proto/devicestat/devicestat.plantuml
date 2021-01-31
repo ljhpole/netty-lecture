@@ -1,0 +1,326 @@
+@startuml
+
+title __DEVICESTAT's Class Diagram__\n
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      class com.kafka.packagedata.proto.devicestat.DeviceAfcEvent {
+          {static} + ACTION_FIELD_NUMBER : int
+          {static} + EVENT_CODE_FIELD_NUMBER : int
+          {static} + EVENT_TIME_FIELD_NUMBER : int
+          {static} + RELATE_NODE_ID_FIELD_NUMBER : int
+          {static} + SRC_NODE_FIELD_NUMBER : int
+          {static} + STATE0_FIELD_NUMBER : int
+          {static} + STATE1_FIELD_NUMBER : int
+          {static} - DEFAULT_INSTANCE : DeviceAfcEvent
+          {static} - PARSER : Parser<DeviceAfcEvent>
+          - action_ : Object
+          - eventCode_ : Object
+          - eventTime_ : Object
+          - memoizedIsInitialized : byte
+          - relateNodeId_ : Object
+          {static} - serialVersionUID : long
+          - srcNode_ : Object
+          - state0_ : Object
+          - state1_ : Object
+          + equals()
+          + getAction()
+          + getActionBytes()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getEventCode()
+          + getEventCodeBytes()
+          + getEventTime()
+          + getEventTimeBytes()
+          + getParserForType()
+          + getRelateNodeId()
+          + getRelateNodeIdBytes()
+          + getSerializedSize()
+          + getSrcNode()
+          + getSrcNodeBytes()
+          + getState0()
+          + getState0Bytes()
+          + getState1()
+          + getState1Bytes()
+          + getUnknownFields()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - DeviceAfcEvent()
+          - DeviceAfcEvent()
+          - DeviceAfcEvent()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      class com.kafka.packagedata.proto.devicestat.DeviceAfcEvent.Builder {
+          - action_ : Object
+          - eventCode_ : Object
+          - eventTime_ : Object
+          - relateNodeId_ : Object
+          - srcNode_ : Object
+          - state0_ : Object
+          - state1_ : Object
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearAction()
+          + clearEventCode()
+          + clearEventTime()
+          + clearField()
+          + clearOneof()
+          + clearRelateNodeId()
+          + clearSrcNode()
+          + clearState0()
+          + clearState1()
+          + clone()
+          + getAction()
+          + getActionBytes()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getEventCode()
+          + getEventCodeBytes()
+          + getEventTime()
+          + getEventTimeBytes()
+          + getRelateNodeId()
+          + getRelateNodeIdBytes()
+          + getSrcNode()
+          + getSrcNodeBytes()
+          + getState0()
+          + getState0Bytes()
+          + getState1()
+          + getState1Bytes()
+          + isInitialized()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeUnknownFields()
+          + setAction()
+          + setActionBytes()
+          + setEventCode()
+          + setEventCodeBytes()
+          + setEventTime()
+          + setEventTimeBytes()
+          + setField()
+          + setRelateNodeId()
+          + setRelateNodeIdBytes()
+          + setRepeatedField()
+          + setSrcNode()
+          + setSrcNodeBytes()
+          + setState0()
+          + setState0Bytes()
+          + setState1()
+          + setState1Bytes()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      interface com.kafka.packagedata.proto.devicestat.DeviceAfcEventOrBuilder {
+          {abstract} + getAction()
+          {abstract} + getActionBytes()
+          {abstract} + getEventCode()
+          {abstract} + getEventCodeBytes()
+          {abstract} + getEventTime()
+          {abstract} + getEventTimeBytes()
+          {abstract} + getRelateNodeId()
+          {abstract} + getRelateNodeIdBytes()
+          {abstract} + getSrcNode()
+          {abstract} + getSrcNodeBytes()
+          {abstract} + getState0()
+          {abstract} + getState0Bytes()
+          {abstract} + getState1()
+          {abstract} + getState1Bytes()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      class com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState {
+          {static} + DEVICE_EVENT_LIST_FIELD_NUMBER : int
+          {static} - DEFAULT_INSTANCE : OriginalAfcDeviceState
+          {static} - PARSER : Parser<OriginalAfcDeviceState>
+          - deviceEventList_ : List<DeviceAfcEvent>
+          - memoizedIsInitialized : byte
+          {static} - serialVersionUID : long
+          + equals()
+          {static} + getDefaultInstance()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDeviceEventList()
+          + getDeviceEventListCount()
+          + getDeviceEventListList()
+          + getDeviceEventListOrBuilder()
+          + getDeviceEventListOrBuilderList()
+          + getParserForType()
+          + getSerializedSize()
+          + getUnknownFields()
+          + hashCode()
+          + isInitialized()
+          {static} + newBuilder()
+          {static} + newBuilder()
+          + newBuilderForType()
+          {static} + parseDelimitedFrom()
+          {static} + parseDelimitedFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parseFrom()
+          {static} + parser()
+          + toBuilder()
+          + writeTo()
+          # internalGetFieldAccessorTable()
+          # newBuilderForType()
+          # newInstance()
+          - OriginalAfcDeviceState()
+          - OriginalAfcDeviceState()
+          - OriginalAfcDeviceState()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      class com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState.Builder {
+          - bitField0_ : int
+          - deviceEventListBuilder_ : RepeatedFieldBuilderV3<DeviceAfcEvent, Builder, DeviceAfcEventOrBuilder>
+          - deviceEventList_ : List<DeviceAfcEvent>
+          + addAllDeviceEventList()
+          + addDeviceEventList()
+          + addDeviceEventList()
+          + addDeviceEventList()
+          + addDeviceEventList()
+          + addDeviceEventListBuilder()
+          + addDeviceEventListBuilder()
+          + addRepeatedField()
+          + build()
+          + buildPartial()
+          + clear()
+          + clearDeviceEventList()
+          + clearField()
+          + clearOneof()
+          + clone()
+          + getDefaultInstanceForType()
+          {static} + getDescriptor()
+          + getDescriptorForType()
+          + getDeviceEventList()
+          + getDeviceEventListBuilder()
+          + getDeviceEventListBuilderList()
+          + getDeviceEventListCount()
+          + getDeviceEventListList()
+          + getDeviceEventListOrBuilder()
+          + getDeviceEventListOrBuilderList()
+          + isInitialized()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeFrom()
+          + mergeUnknownFields()
+          + removeDeviceEventList()
+          + setDeviceEventList()
+          + setDeviceEventList()
+          + setField()
+          + setRepeatedField()
+          + setUnknownFields()
+          # internalGetFieldAccessorTable()
+          - Builder()
+          - Builder()
+          - ensureDeviceEventListIsMutable()
+          - getDeviceEventListFieldBuilder()
+          - maybeForceBuilderInitialization()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      interface com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceStateOrBuilder {
+          {abstract} + getDeviceEventList()
+          {abstract} + getDeviceEventListCount()
+          {abstract} + getDeviceEventListList()
+          {abstract} + getDeviceEventListOrBuilder()
+          {abstract} + getDeviceEventListOrBuilderList()
+      }
+    }
+  }
+  
+
+  namespace com.kafka {
+    namespace packagedata.proto.devicestat {
+      class com.kafka.packagedata.proto.devicestat.devicestat {
+          {static} ~ internal_static_package_parse_hx_DeviceAfcEvent_descriptor : Descriptor
+          {static} ~ internal_static_package_parse_hx_DeviceAfcEvent_fieldAccessorTable : FieldAccessorTable
+          {static} ~ internal_static_package_parse_hx_OriginalAfcDeviceState_descriptor : Descriptor
+          {static} ~ internal_static_package_parse_hx_OriginalAfcDeviceState_fieldAccessorTable : FieldAccessorTable
+          {static} - descriptor : FileDescriptor
+          {static} + getDescriptor()
+          {static} + registerAllExtensions()
+          {static} + registerAllExtensions()
+          - devicestat()
+      }
+    }
+  }
+  
+
+  com.kafka.packagedata.proto.devicestat.DeviceAfcEvent .up.|> com.kafka.packagedata.proto.devicestat.DeviceAfcEventOrBuilder
+  com.kafka.packagedata.proto.devicestat.DeviceAfcEvent -up-|> com.google.protobuf.GeneratedMessageV3
+  com.kafka.packagedata.proto.devicestat.DeviceAfcEvent +-down- com.kafka.packagedata.proto.devicestat.DeviceAfcEvent.Builder
+  com.kafka.packagedata.proto.devicestat.DeviceAfcEvent.Builder .up.|> com.kafka.packagedata.proto.devicestat.DeviceAfcEventOrBuilder
+  com.kafka.packagedata.proto.devicestat.DeviceAfcEvent.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+  com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState .up.|> com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceStateOrBuilder
+  com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState -up-|> com.google.protobuf.GeneratedMessageV3
+  com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState +-down- com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState.Builder
+  com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState.Builder .up.|> com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceStateOrBuilder
+  com.kafka.packagedata.proto.devicestat.OriginalAfcDeviceState.Builder -up-|> com.google.protobuf.GeneratedMessageV3.Builder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
