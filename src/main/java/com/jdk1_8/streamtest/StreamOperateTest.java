@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class StreamOperateTest {
@@ -38,5 +39,19 @@ public class StreamOperateTest {
                 .distinct()
                 .collect(toList());
         collect1.forEach((System.out::println));
+
+        /*
+        test:
+        collectors::joining()
+         */
+        System.out.println("======================================================");
+        System.out.println(words.stream()
+                .collect(joining(", ")));
+
+        System.out.println("======================================================");
+        List<String> collect2 = words.stream()
+                .collect(new ToListCollector<String>());
+        System.out.println(collect2);
+
     }
 }
